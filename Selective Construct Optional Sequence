@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    if (ilikepizza == 1){
+        printf("I like pizza\n");
+        printf("I also like food\n");
+    }
+}
