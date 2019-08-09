@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int loonies;
+    double cash;
+
+    printf("Loonies ? ");
+    scanf("%d", &loonies);
+    cash = loonies;
+    printf("Cash is $%.2lf\n", cash);
+
+    return 0;
+}
