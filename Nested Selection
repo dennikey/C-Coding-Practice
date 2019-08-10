@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int grade;
+
+    printf("Enter your grade here : ");
+    scanf("%d", &grade);
+
+    if (grade < 50) {
+        if (sup == 1)
+            printf("Sup\n");
+        else
+            printfI("Failed\n");
+    } else
+        printf("Pass\n");
+}
