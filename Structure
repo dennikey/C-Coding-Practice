@@ -1,3 +1,8 @@
+struct Product {
+    int sku;
+    double price;
+}; /* must be in a different file (headings) */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "product.h"
