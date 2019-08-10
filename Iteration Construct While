@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int slices;
+
+    slices = 4;
+    while (slices > 0) {
+        slices--;
+        printf("Gulp! Slices left %d\n", slices);
+    }
+}
