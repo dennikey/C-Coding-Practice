@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int slices;
+
+    for (slices = 4; slices > 0; --slices)
+        printf("Gulp! Slices left %d\n", slices - 1);
+}
