@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void alphabet()
+{
+    char letter = 'A';
+    do {
+        printf("%c", letter);
+        letter++;
+    } while (letter != 'Z');
+    return;
+}
+
+int main()
+{
+    alphabet();
+
+    return 0;
+}
