@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void internal_swap(int *p, int *q)
+{
+    int c;
+
+    c = *p;
+    *p = *q;
+    *q = c;
+}
+
+int main()
+{
+    int a, b;
+
+    printf("a is ");
+    scanf("%d", &a);
+    printf("b is ");
+    scanf("%d", &b);
+
+    internal_swap(&a, &b);
+
+    printf("After internal_swap:\n a is %d\n b is %d\n", a, b);
+
+    return 0;
+}
