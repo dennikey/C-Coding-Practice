@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int x;
+    int *p = &x;
+
+    printf("Enter x : ");
+    scanf("%d", &x);
+    printf("Value stored in x : %d\n", *p);
+    printf("Address stored in x : %x\n", p);
+
+    return 0;
+}
