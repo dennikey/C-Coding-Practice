@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void foo (int x)
+{
+    int i  = 4;
+    do {
+        int x = i;
+        printf("%d", x);
+        i--;
+    } while(i > 0);
+    printf("%d", x);
+}
+
+int main ()
+{
+    foo (6);
+    return 0;
+}
