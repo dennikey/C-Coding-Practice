@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main ()
+{
+    #define NGRADES 8
+    const int NGRADES = 8;
+    
+    int grade[NGRADES];
+
+    printf("Your last grade was %d\n", grade [NGRADES - 1]);
+    printf("Your second last grade was %d\n", grade[NGRADES - 4]);
+
+    return 0;
+}
