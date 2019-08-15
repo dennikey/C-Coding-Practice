@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct Student
+{
+    int no;
+    int no_grades_filled;
+    float grade[4];
+};
+
+void set (struct Student* st);
+void display (const struct Student st);
+
+int main ()
+{
+    struct Student harry = {975, 3, {75.6f, 82.3f, 68.9f, 1.0f}};
+    set(&harry);
+    display(harry);
+
+    return 0;
+}
+
+void set(struct Student* st)
+{
+    struct Student harry = {306, 2, {78.9, 91.6}};
+    *st = harry;
+}
+
+void display (const struct Student st)
+{
+    int i;
+    printf("Grades for %d\n", st.no);
+    for (i = 0; i < st.no_grades_filled; i++)
+        printf("%.1f\n", st.grade[i]);
+}
