@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct A
+{
+    int x;
+    double r;
+};
+
+void foo(struct A* c);
+struct A goo(struct A d);
+
+int main()
+{
+    struct A a = {4, 6.67}, b;
+
+    foo(&a);
+    printf("00%d.%.3lf.111\n", a.x, a.r);
+    b = goo(a);
+    printf("00%d.%.3lf.112\n", a.x, a.r);
+    printf("%d.%.3lf.113\n", b.x, b.r);
+
+    return 0;
+}
+
+void foo(struct A* c)
+{
+    int i;
+
+    i = c->x;
+    c->x = c->r;
+    c->r = i;
+}
+
+struct A goo(struct A d)
+{
+    struct A e;
+
+    d.x = d.r - 62;
+    e = d;
+    return e;
+};
