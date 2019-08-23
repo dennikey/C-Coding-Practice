@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main (void)
+{
+    FILE *fp = NULL;
+
+    fp = fopen("alpha.txt", "w");
+    if (fp != NULL) {
+        printf("Success\n");
+    }
+    else {
+        printf("Failed to open\n");
+    }
+    return 0;
+}
