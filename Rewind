@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main (void)
+{
+    FILE *fp = NULL;
+    int sku;
+    double price;
+
+    fp = fopen("alpha.txt", "w");
+    if (fp != NULL) {
+        fscanf(fp, "%d %lf", &sku, &price);
+        printf(fp, "sku = %d price = %10.21f\n", sku, price);
+        fclose(fp);
+    }
+    else {
+        printf("Failed to open\n");
+    }
+    return 0;
+}
