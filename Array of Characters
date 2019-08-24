@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+void print(const char name[])
+{
+    int i;
+
+    for (i = 0; name[i] != '\0'; i++)
+        printf("%c", name[i]);
+    putchar('\n');
+}
+
+int main (void)
+{
+    int i;
+    const char name [31] = "My name is Arnold";
+
+    print(name);
+    return 0;
+}
