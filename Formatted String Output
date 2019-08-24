@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main (void)
+{
+    FILE *fp = NULL;
+    const char phrase[] = "My name is Arnold";
+
+    fp = fopen("alpha.txt", "w");
+    if (fp != NULL){
+        fprintf(fp, "%s\n", phrase);
+        fclose(fp);
+    } else {
+        printf("Failed to open file\n");
+    }
+
+    return 0;
+}
