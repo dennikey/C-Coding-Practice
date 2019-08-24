@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main (void)
+{
+    FILE *fp = NULL;
+    char phrase[61];
+
+    fp = fopen("spring.dat", "r");
+    if (fp != NULL){
+        while(fscanf(fp, "%60[^\n]%*c", phrase)!= EOF)
+            printf("%s\n", phrase);
+        fclose(fp);
+    } else {
+        printf("Failed to open file\n");
+    }
+    return 0;
+}
