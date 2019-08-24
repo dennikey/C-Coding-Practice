@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main (void)
+{
+    FILE *fp = NULL;
+    int sku;
+    double price;
+
+    fp = fopen("alpha.txt", "r");
+    if (fp != NULL){
+        printf("Produce Items\n"
+               "=============\n"
+               "sku     Price\n");
+        while (fscanf(fp, "%d%lf\n", &sku, &price) == 2)
+            printf("%4d %8.2lf\n", sku, price);
+        fclose(fp);
+    }
+    return 0;
+}
